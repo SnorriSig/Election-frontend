@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
+
+body {
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: black;
+  color: lightgray;
+}
+
+h1 {
+  padding: 40px 0 40px 0;
+  text-align: center;
+}
+
+a.title {
+  color: burlywood;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+a.home-links {
+  color: lightgray;
+}
+
+a:hover {
+  color: #94b2eb;
+  cursor: pointer;
+}
+
+p {
+  text-align: center;
+}
+
+h2 {
+  color: cadetblue;
+  font-size: 3.75rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.add-movie button {
+  margin-bottom: 3.5rem;
+}
+
+button {
+  max-width: 150%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: black;
+  background-color: lightgrey;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  text-align: left;
+  line-height: 3rem;
+}
+
+.form-container {
+  display: table;
+  width: 100%;
+}
+
+form {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.submit-button {
+  margin-top: 1rem;
+}
+
+ul {
+  text-align: center;
+  list-style-type: none;
+}
