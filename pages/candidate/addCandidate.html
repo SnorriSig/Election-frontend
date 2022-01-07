@@ -10,11 +10,19 @@
       <section class="form-container">
         <form method="post">
           <label for="firstName">Candidate first name:</label><br />
-          <input placeholder="first name" type="text" id="candidateFirstName" name="firstName" /><br />
+          <input placeholder="first name" type="text" id="candidate-first-name" name="firstName" /><br />
           <label for="lastName">Candidate last name:</label><br />
-          <input placeholder="last name" type="text" id="candidateLastName" name="lastName" /><br />
+          <input placeholder="last name" type="text" id="candidate-last-name" name="lastName" /><br />
+          
           <label for="party">Member of a political party:</label><br />
-          <input placeholder="enter party id" type="text" id="candidateParty" name="party" /><br />
+          <select placeholder="enter party id" type="text" id="candidate-party" name="party" /><br />
+          <option value="1">A. Socialdemokratiet</option>
+          <option value="2">F. SF- Socialistisk Folkeparti</option>
+          <option value="3">Ø. Enhedslisten - De Rød-Grønne</option>
+          <option value="4">C. Det konservative Folkeparti</option>
+          <option value="5">O. Dansk Folkeparti</option>
+          <option value="6">V. Venstre, Danmarks Liberale Parti</option>
+        </select>
           <button class="submit-button" type="submit">Submit</button>
         </form>
       </section>

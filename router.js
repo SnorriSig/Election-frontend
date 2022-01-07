@@ -1,5 +1,7 @@
 import renderMain from "./pages/main/main.js";
 import renderAbout from "./pages/about/about.js";
+import renderParties from "./pages/parties/parties.js"
+import renderParty from "./pages/party/party.js"
 import renderCandidates from "./pages/candidates/candidates.js"
 import renderAddCandidate from "./pages/candidate/addCandidate.js"
 import renderEditCandidate from "./pages/candidate/editCandidate.js";
@@ -18,14 +20,20 @@ export default () => {
       about: () => {
         renderAbout();
       },
+      parties: () => {
+        renderParties().then(router.updatePageLinks);
+      },
+      "party/:partyId": ({data}) => {
+        renderParty(data.partyId);
+      },
       candidates: () => {
-        renderCandidates().then(router.updatePageLinks);
+        renderCandidates();
       },
       addCandidate: () => {
         renderAddCandidate();
       },
-      "candidate/:id/editCandidate": ({ data }) => {
-        renderEditCandidate(data.id);
+      "party/:partyId/editCandidate/:id": ({ data, params }) => {
+        renderEditCandidate(data.id, data.partyId);
       },
     })
     .resolve();
